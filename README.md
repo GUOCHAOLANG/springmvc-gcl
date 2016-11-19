@@ -11,7 +11,7 @@ The second step,adding the required jar package.
 
 The third step,configure the spring configuration file
 E.g:
-<beans xmlns="http://www.springframework.org/schema/beans"
+    <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
     xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
     xsi:schemaLocation="http://www.springframework.org/schema/beans
@@ -38,7 +38,7 @@ E.g:
 The fourth step,configuration web.xml.
 Here to note the prefix of the spring configuration file name and servlet-name the same.This is the default(xxx-servlet.xml)
 web.xml configuration as follows(basic):
-<servlet>
+	<servlet>
 		<servlet-name>springmvc</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<load-on-startup>1</load-on-startup>
