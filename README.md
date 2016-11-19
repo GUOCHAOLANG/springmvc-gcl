@@ -37,5 +37,19 @@ E.g:
 
 The fourth step,configuration web.xml.
 Here to note the prefix of the spring configuration file name and servlet-name the same.This is the default(xxx-servlet.xml)
+web.xml configuration as follows(basic):
+<servlet>
+		<servlet-name>springmvc</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>springmvc</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+The fifth step,the beginning of the preparation of logic,the preparation of processing category.
+
+note:
+1.ModelAndView the file reference to use org.springframework.web.servlet.ModelAndView backage
 
 
